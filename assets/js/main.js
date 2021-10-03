@@ -3,6 +3,30 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+const copyToClipboard = str => {
+	const el = document.createElement('textarea');
+	el.value = str;
+	document.body.appendChild(el);
+	el.select();
+	document.execCommand('copy');
+	document.body.removeChild(el);
+  };
+  
+  const url ="";
+  
+  document.getElementById('Mail').addEventListener('click', function(e){ 
+	let myUrl =  url + e.target.dataset.page_id;
+	copyToClipboard( myUrl );
+	alert(myUrl + ' copied to clipboard!')
+  });
+  
+  document.getElementById('Phone').addEventListener('click', function(e){ 
+	let myUrl =  url + e.target.dataset.page_id;
+	copyToClipboard( myUrl );
+	alert(myUrl + ' copied to clipboard!')
+  });
+
+
 
 (function($) {
 
