@@ -29,6 +29,7 @@
 											<ul>
 												<li><a href="https://ddecuyper.itch.io/rise-to-valhalla">Rise to Valhalla</a></li>
 												<li><a href="Techscape.html">Techscape</a></li>
+												<li class><a href="CustomEngine.html">Custom C++ engine</a></li>
 											</ul>
 										</li>
 										<li><a href="index.html#About me">About Me</a></li>
@@ -46,32 +47,35 @@
 
 								<article>
 									<header>
-										<h2>Techscape</h2>
-										<p>All content, all the time.</p>
+										<h2>Custom C++ game engine</h2>
+										<p></p>
 									</header>
 
-									<span class="image featured"><img src="images/banner.jpg" alt="" /></span>
+								<img  style ="display: block;
+											margin-left: auto;
+											margin-right: auto;
+											width: 50%;"
+											src="images/QbertGame.png" alt="" />
+									<h3>Technical</h3>
+									<p>This project uses SDL for player input and sound, imgui for UI and glm as math librairy.</p>
 
-									<p>This project is issued by a the Colruyt group a belgian retailer </p>
-
-									<h3>And Yet Another Subheading</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac quam risus, at tempus
-									justo. Sed dictum rutrum massa eu volutpat. Quisque vitae hendrerit sem. Pellentesque lorem felis,
-									ultricies a bibendum id, bibendum sit amet nisl. Mauris et lorem quam. Maecenas rutrum imperdiet
-									vulputate. Nulla quis nibh ipsum, sed egestas justo. Morbi ut ante mattis orci convallis tempor.
-									Etiam a lacus a lacus pharetra porttitor quis accumsan odio. Sed vel euismod nisi. Etiam convallis
-									rhoncus dui quis euismod. Maecenas lorem tellus, congue et condimentum ac, ullamcorper non sapien.
-									Donec sagittis massa et leo semper a scelerisque metus faucibus. Morbi congue mattis mi.
-									Phasellus sed nisl vitae risus tristique volutpat. Cras rutrum commodo luctus.</p>
-
-									<p>Phasellus odio risus, faucibus et viverra vitae, eleifend ac purus. Praesent mattis, enim
-									quis hendrerit porttitor, sapien tortor viverra magna, sit amet rhoncus nisl lacus nec arcu.
-									Suspendisse laoreet metus ut metus imperdiet interdum aliquam justo tincidunt. Mauris dolor urna,
-									fringilla vel malesuada ac, dignissim eu mi. Praesent mollis massa ac nulla pretium pretium.
-									Maecenas tortor mauris, consectetur pellentesque dapibus eget, tincidunt vitae arcu.
-									Vestibulum purus augue, tincidunt sit amet iaculis id, porta eu purus.</p>
+									<h3>The engine</h3>
+									<p>It is made based on design patterns to have core functionality needed for games. The first one of these patterns is the update method, this allows people to
+										manage their own behavior of game objects by overriding an update method. The engine does not have a fixed update since its goal was to run an arcade game 
+										which is not physics based. To customize objects the way the user wants I added components so you can add only the functionality you need to game objects 
+										that need it. Next up was adding observers so objects could interact and react if need be. After making sure objects could communicate I added the option to add
+										player input using SDL. This input uses the command pattern to have objects act the way the user wants. Last but not least I added the option to add sound to games with the
+										 help of the service locator pattern which loads sound on a different thread for better performance.
+										 
+									</p>
+									<h3>The game</h3>
+									<p>In order to test the functionality I made an implementation of Qbert. It consists out of three levels of which the data is read in from a Json file. All Qbert enemies are in the game 
+										so the player has to be aware of Coily, Wrongway and Ugg because hitting the makes the player lose a life. Slik and Sam take away some of the players progress and can be eliminated by 
+										colliding with them. On top of the base version of the game I also added a coop version and a versus mode where a second player plays as Coily. Players can either choose to play using
+										controller or using keyboard.
+									</p>
 								</article>
-
+								<h3><em>You can have a look at the source code on my </em><a href="https://github.com/LangeraertPepijn/Minigin">GitHub</a><em>.</em></h3>
 						</div>
 					</div>
 				</section>
