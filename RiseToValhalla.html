@@ -29,7 +29,7 @@
 											<ul>
 												<li><a href="RiseToValhalla.html">Rise to Valhalla</a></li>
 												<li><a href="Techscape.html">Techscape</a></li>
-												<li class><a href="CustomEngine.html">Custom C++ engine</a></li>
+												<li><a href="CustomEngine.html">Custom C++ engine</a></li>
 											</ul>
 										</li>
 										<li><a href="index.html#About me">About Me</a></li>
@@ -43,42 +43,60 @@
 					<div class="container">
 						<div id="content">
 
-							<!-- Content -->
-
-								<article>
 									<header>
-										<h2>Custom C++ game engine</h2>
-										<p></p>
+										<h2>Rise to Valhalla</h2>
+										<p>Arcade game for PC made using Unity (C#)</p>
 									</header>
 
-								<img  style ="display: block;
-											margin-left: auto;
-											margin-right: auto;
-											width: 50%;"
-											src="images/QbertGame.png" alt="" />
-									<h3>Technical</h3>
-									<p>This project uses SDL for player input and sound, imgui for UI and glm as math librairy.</p>
-
-									<h3>The engine</h3>
-									<p>It is made based on design patterns to have core functionality needed for games. The first one of these patterns is the update method, this allows people to
-										manage their own behavior of game objects by overriding an update method. The engine does not have a fixed update since its goal was to run an arcade game 
-										which is not physics based. To customize objects the way the user wants I added components so you can add only the functionality you need to game objects 
-										that need it. Next up was adding observers so objects could interact and react if need be. After making sure objects could communicate I added the option to add
-										player input using SDL. This input uses the command pattern to have objects act the way the user wants. Last but not least I added the option to add sound to games with the
-										 help of the service locator pattern which loads sound on a different thread for better performance.
-										 
-									</p>
-									<h3>The game</h3>
-									<p>In order to test the functionality I made an implementation of Qbert. It consists out of three levels of which the data is read in from a Json file. All Qbert enemies are in the game 
-										so the player has to be aware of Coily, Wrongway and Ugg because hitting the makes the player lose a life. Slik and Sam take away some of the players progress and can be eliminated by 
-										colliding with them. On top of the base version of the game I also added a coop version and a versus mode where a second player plays as Coily. Players can either choose to play using
-										controller or using keyboard.
-									</p>
-								</article>
-								<h3><em>You can have a look at the source code on my </em><a href="https://github.com/LangeraertPepijn/Minigin">GitHub</a><em>.</em></h3>
+									<span class="image featured"><img src="images/banner.jpg" alt="" /></span>
+									
+									<div class="container">
+										<div class="row gtr-200">
+											<div class="col-8 col-12-narrower">
+												<div id="content">
+				
+													<!-- Content -->
+				
+														
+							
+				
+															<h3>Prototyping </h3>
+															<p>The first week we discussed what type of game we planned on making and then I made 
+																a first draft of our character movement. The following week I started on how the 
+																character would teleport and how this could be utilized, checking for platforms and 
+																making its use limmited.. 
+															</p>
+															<h3>First production sprint</h3>
+															<p>The first week we discussed what type of game we planned on making and then I made 
+																a first draft of our character movement. The following week I started on how the 
+																character would teleport and how this could be utilized, checking for platforms and 
+																making its use limmited.. 
+															</p>
+				
+												</div>
+											</div>
+											<div class="col-4 col-12-narrower">
+												<div id="sidebar">
+				
+													<!-- Sidebar -->
+				
+														<section>
+															<h3><em>More information and  builds can be found on </em><a href="https://ddecuyper.itch.io/rise-to-valhalla">Itch.io</a><em>.</em></h3>
+															<h3>Prototype </h3>
+															<span class="image featured"><img src="images/RiseToValhalla prototype.gif" alt="" /></span>
+															<p>The player slows down time and gets a line to inciate where they will be teleporting to.</p>
+														</section>
+												</div>
+											</div>
+											
+										</div>
+									</div>
+							
 						</div>
 					</div>
 				</section>
+
+
 
 				<div id="footer">
 					<div class="container">
