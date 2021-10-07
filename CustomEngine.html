@@ -15,7 +15,7 @@
 		<div id="page-wrapper">
 
 						<!-- Header -->
-						<div id="header">
+						<div id="header" style="background-color: rgb(28, 43, 71);">
 
 							<!-- Logo -->
 								<h1><a href="https://www.linkedin.com/in/pepijn-langeraert" id="logo">Pepijn Langeraert<em></em></a></h1>
@@ -25,7 +25,7 @@
 									<ul>
 										<li ><a href="index.html">Home</a></li>
 										<li class="current">
-											<a  href="index.html#Finished projects"> Projects</a>
+											<a  href="index.html#Projects"> Projects</a>
 											<ul>
 												<li><a href="RiseToValhalla.html">Rise to Valhalla</a></li>
 												<li><a href="Techscape.html">Techscape</a></li>
@@ -39,7 +39,7 @@
 						</div>
 
 			<!-- Main -->
-				<section class="wrapper style1">
+				<section class="wrapper style1" style="background-color: rgb(28, 43, 71);">
 					<div class="container">
 						<div id="content">
 
@@ -47,7 +47,7 @@
 
 								<article>
 									<header>
-										<h2>Custom C++ game engine</h2>
+										<h2 style="color: rgb(255, 255, 255);">Custom C++ game engine</h2>
 										<p></p>
 									</header>
 
@@ -56,11 +56,11 @@
 											margin-right: auto;
 											width: 50%;"
 											src="images/QbertGame.png" alt="" />
-									<h3>Technical</h3>
-									<p>This project uses SDL for player input and sound, imgui for UI and glm as math library.</p>
+									<h3 style="color: rgb(255, 255, 255);">Technical</h3>
+									<p style="color:rgb(155,155,155);">This project uses SDL for player input and sound, imgui for UI and glm as math library.</p>
 
-									<h3>The engine</h3>
-									<p>It is made based on design patterns to have the core functionality needed for games. The first one of these patterns is the update method, which allows people to
+									<h3 style="color: rgb(255, 255, 255);">The engine</h3>
+									<p style="color:rgb(155,155,155);">It is made based on design patterns to have the core functionality needed for games. The first one of these patterns is the update method, which allows people to
 										manage the behavior of game objects by overriding an update method. The engine does not have a fixed update since its goal was to run an arcade game 
 										that is not physics-based. To customize objects the way the user wants I added components so you can add only the functionality you need to game objects 
 										that need it. Next up was adding observers so objects could interact and react if necessary. After making sure objects could communicate I added the option to add
@@ -68,35 +68,38 @@
 										 help of the service locator pattern which loads sound on a different thread for better performance.
 										 
 									</p>
-									<h3>The game</h3>
-									<p>In order to test the functionality, I implemented of Qbert. It consists out of three levels of which the data is read in from a JSON file. All Qbert enemies are in the game, 
+									<h3 style="color: rgb(255, 255, 255);">The game</h3>
+									<p style="color:rgb(155,155,155);">In order to test the functionality, I implemented of Qbert. It consists out of three levels of which the data is read in from a JSON file. All Qbert enemies are in the game, 
 										so the player has to be aware of Coily, Wrongway and Ugg because hitting them makes the player lose a life. Slik and Sam take away some of the player's progress and can be eliminated by 
 										colliding with them. On top of the base version of the game, I also added a co-op version and a versus mode, where a second player plays as Coily. Players can either choose to play using
 										a controller or using a keyboard.
 									</p>
 								</article>
-								<h3><em>You can have a look at the source code on my </em><a href="https://github.com/LangeraertPepijn/Minigin">GitHub</a><em>.</em></h3>
+								<h3 style="color:rgb(155,155,155);"><em>You can have a look at the source code on my </em ><a href="https://github.com/LangeraertPepijn/Minigin" style="color:white">GitHub</a><em>.</em></h3>
 						</div>
 					</div>
 				</section>
-
-				<div id="footer">
-					<div class="container">
+				<div id="footer" style="background-color: rgb(43, 43, 43);">
+					<div class="container" >
 						<div class="row">
 							<section class="col-6 col-12-narrower col-12-mobilep">
-								<h3>Contact info</h3>
+								<h3 style="color: rgb(255, 255, 255);">Contact info</h3>
 								
-								<h1><a>Mail	<em id="Mail" data-page_id="pepijn.langeraert@gmail.com">pepijn.langeraert@gmail.com</em></a></h1>
-			
-								<h1><a>Phone <em id="Phone" data-page_id="0032498471292">+32 498 471 292</em></a></h1>
-								<h1>Residence <em>Belgium, Bruges</em></h1>
-							
+								<h1 style="color: rgb(255, 255, 255);"><a>Mail	<em id="Mail" data-page_id="pepijn.langeraert@gmail.com">pepijn.langeraert@gmail.com</em></a></h1>
+								<h1 style="color: rgb(255, 255, 255);"><a>Phone <em id="Phone" data-page_id="0032498471292">+32 498 471 292</em></a></h1>
+								<h1 style="color: rgb(255, 255, 255);">Residence <em>Belgium, Bruges</em></h1>
+								<p></p>
+							<ul class="icons" style="margin-right:300px">
+								<li ><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+								<li><a href="https://www.linkedin.com/in/pepijn-langeraert" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+								<li><a href="https://www.linkedin.com/in/pepijn-langeraert" class="icon brands fa-itch-io"><span class="label">LinkedIn</span></a></li>
+							</ul>
 							</section>
 											<section class="col-6 col-12-narrower col-12-mobilep">
-								<h3>Get In Touch</h3>
+								<h3 style="color: rgb(255, 255, 255);">Get In Touch</h3>
 								<form>
 									<div class="row gtr-50">
-				
+										<p style="color: rgb(255, 255, 255);">If you have any questions feel free to contact me.</p>
 									</div>
 								</form>
 							</section>
@@ -105,10 +108,6 @@
 	
 	
 						<!-- Icons -->
-							<ul class="icons">
-								<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-								<li><a href="https://www.linkedin.com/in/pepijn-langeraert" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-							</ul>
 	
 						<!-- Copyright -->
 							<div class="copyright">
@@ -119,8 +118,7 @@
 	
 					</div>
 	
-
-		</div>
+			</div>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
