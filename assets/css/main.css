@@ -3359,3 +3359,11 @@ input, select, textarea {
 			}
 
 	}
+	.static {
+		position:absolute;
+
+	  }
+	  
+	  .static:hover {
+		opacity:0;
+	  }
